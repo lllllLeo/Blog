@@ -1,21 +1,12 @@
-package blog.yujun.leo.Controller;
+package blog.yujun.leo.controller;
 
-import blog.yujun.leo.DTO.User;
+import blog.yujun.leo.dto.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MainController {
-
-    @GetMapping("/hi")
-    public String hello(Model model) {
-        User user = new User();
-        user.setAge(27);
-        user.setName("유준");
-        model.addAttribute(user);
-        return "a";
-    }
 
     @GetMapping("/")
     public String index(Model model){

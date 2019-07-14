@@ -1,5 +1,11 @@
 #### 정적 파일
-- JAR로 패키징 할 경우 `src/main/webapp`의 파일들을 무시하고 패키징하기 때문에 사용하지 않는 것이 좋고 `static`,`public` 등에 저장하자
+- 스프링 부트는 기본적으로 Runnable JAR로 실행되므로 WAR 규격에 맞춰서 WEB-INF 폴더를 만들거나 webapp 폴더를 만들지 않음
+- 정적 HTML 파일
+  - `src/main/resources/static`
+  - `src/main/public`
+- 템플릿
+  - `src/main/resources/templates`
+
   - `webapp`에 넣고싶으면 `pom.xml`에 아래처럼 명시하면 됨 
     ```xml
             <resources>
@@ -43,3 +49,17 @@
 </tr>
 ```
   
+---
+
+MySQL root 비밀번호 찾기
+cmd에서 C:\Program Files\MySQL\MySQL Server 5.5\bin로 이동한 후에 
+`mysqld.exe --skip-grant` 하면 새 cmd창이 뜬다. 그리고 mysql 로그인하면 그냥 들어가짐. 
+그리고 
+```
+use mysql
+UPDATE user SET password=PASSWORD('변경할패스워드') where user='root';
+FLUSH PRIVILEGES;
+exit;
+```
+
+하고 다시 로그인하면 끝
