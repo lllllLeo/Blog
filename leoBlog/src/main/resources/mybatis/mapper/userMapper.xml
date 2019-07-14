@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper가 저장된 패키지명과 파일명으로 지정 -->
+<mapper namespace="user">
+
+    <!-- resulType에 UserDTO만 적었더만 오류났었음 빈 뭐시기 -->
+    <select id="getUserInfo" resultType="blog.yujun.leo.dto.UserDTO">
+        SELECT age, name FROM yujun
+    </select>
+
+</mapper>

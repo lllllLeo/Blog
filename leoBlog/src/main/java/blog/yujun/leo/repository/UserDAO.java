@@ -1,19 +1,18 @@
 package blog.yujun.leo.repository;
 
+import blog.yujun.leo.dto.UserDTO;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
-public class UserRepository {
-    private static final String MAPPER_NAME_SPACE = "mapper.userMapper.";
+public class UserDAO {
 
     @Autowired
     private SqlSessionTemplate sqlSessionTemplate;
 
-    public List getUserInfoAll(){
-        return sqlSessionTemplate.selectList(MAPPER_NAME_SPACE + "selectUserInfoAll");
+    public UserDTO getUserInfo() {
+        return sqlSessionTemplate.selectOne("user.getUserInfo");
     }
+
 }

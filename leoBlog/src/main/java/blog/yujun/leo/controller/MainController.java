@@ -1,16 +1,26 @@
 package blog.yujun.leo.controller;
 
-import blog.yujun.leo.dto.User;
-import org.springframework.stereotype.Controller;
+import blog.yujun.leo.dto.UserDTO;
+import blog.yujun.leo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class MainController {
+
+    @Autowired
+    private UserService userService;
+
+    @GetMapping("yujun")
+    public UserDTO yujun() throws Exception {
+        return userService.getUserInfo();
+    }
 
     @GetMapping("/")
     public String index(Model model){
-        User user = new User();
+        UserDTO user = new UserDTO();
         user.setAge(27);
         user.setName("유준");
         model.addAttribute(user);
