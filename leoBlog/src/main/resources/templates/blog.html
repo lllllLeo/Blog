@@ -22,26 +22,26 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="/resources/images/favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="/resources/css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="/resources/css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="/resources/css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="/resources/css/flexslider.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="/resources/css/style.css">
+
+		<!-- Animate.css -->
+		<link th:href="@{static-resource/css/animate.css}" rel="stylesheet">
+		<!-- Icomoon Icon Fonts-->
+		<link th:href="@{static-resource/css/icomoon.css}" rel="stylesheet">
+		<!-- Bootstrap  -->
+		<link th:href="@{static-resource/css/bootstrap.css}" rel="stylesheet">
+		<!-- Flexslider  -->
+		<link th:href="@{static-resource/css/flexslider.css}" rel="stylesheet">
+		<!-- Theme style  -->
+		<link th:href="@{static-resource/css/style.css}" rel="stylesheet" >
 
 	<!-- Modernizr JS -->
-	<script src="/resources/js/modernizr-2.6.2.min.js"></script>
+	<script th:src="@{static-resource/js/modernizr-2.6.2.min.js}"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<script th:src="@{static-resource/js/respond.min.js}"></script>
 	<![endif]-->
 
 	</head>
@@ -106,23 +106,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<div class="row">
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="/resources/images/img-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="/blog" class="blog-img"><img th:src="@{static-resource/images/img-1.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 								<div class="desc">
 									<span><small>#1</small> | <small>2018/02/07</small> | <small><i class="icon-eye"></i> 1 view </small></span>
-									<h3><a href="blog.html">18 Awesome sites</a></h3>
+									<h3><a href="/blog">18 Awesome sites</a></h3>
 									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+									<a href="/blog" class="lead">Read More <i class="icon-arrow-right3"></i></a>
 								</div>
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="/resources/images/img-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<a href="/blog" class="blog-img"><img th:src="@{static-resource/images/img-2.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
 								<div class="desc">
 									<span><small>2018-02-07</small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<h3><a href="/blog">Wordpress for a Beginner</a></h3>
 									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+									<a href="/blog" class="lead">Read More <i class="icon-arrow-right3"></i></a>
 								</div>
 							</div>
 						</div>
@@ -154,22 +154,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		</div>
 	</div>
 
-	<!-- jQuery -->
-	<script src="/resources/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="/resources/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="/resources/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="/resources/js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="/resources/js/jquery.flexslider-min.js"></script>
-	<!-- Sticky Kit -->
-	<script src="/resources/js/sticky-kit.min.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="/resources/js/main.js"></script>
+		<!-- jQuery -->
+		<script th:src="@{static-resource/js/jquery.min.js}"></script>
+		<!-- jQuery Easing -->
+		<script th:src="@{static-resource/js/jquery.easing.1.3.js}"></script>
+		<!-- Bootstrap -->
+		<script th:src="@{static-resource/js/bootstrap.min.js}"></script>
+		<!-- Waypoints -->
+		<script th:src="@{static-resource/js/jquery.waypoints.min.js}"></script>
+		<!-- Flexslider -->
+		<script th:src="@{static-resource/js/jquery.flexslider-min.js}"></script>
+		<!-- Sticky Kit -->
+		<script th:src="@{static-resource/js/sticky-kit.min.js}"></script>
+		<!-- MAIN JS -->
+		<script th:src="@{static-resource/js/main.js}"></script>
 
 	<!-- Logout -->
 	<script>

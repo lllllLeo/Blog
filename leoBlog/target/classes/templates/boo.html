@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <html>
 <head>
 <link rel="shortcut icon" href="/resources/images/favicon.ico">
@@ -14,7 +13,7 @@
 	</audio> -->
 	<!-- <iframe src="/resources/audio/01.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 	</iframe>  -->
-	<iframe class="audio" loop autoplay="autoplay" src="/resources/audio/01.mp3" controls style = "display:none;">
+	<iframe class="audio" loop autoplay="autoplay" th:src="@{static-resource/audio/01.mp3}" controls style = "display:none;">
 	</iframe>
 	<section id="posts">
   <a href="#" title="boo" class="post" style="background-image: url(resources/images/boo1.jpg);"><h2>I'm Boo</h2><p class="lead">By Boo Mom</p></a>

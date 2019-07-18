@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -23,26 +22,26 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="/resources/images/favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="/resources/css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="/resources/css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="/resources/css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="/resources/css/flexslider.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="/resources/css/style.css">
+
+		<!-- Animate.css -->
+		<link th:href="@{static-resource/css/animate.css}" rel="stylesheet">
+		<!-- Icomoon Icon Fonts-->
+		<link th:href="@{static-resource/css/icomoon.css}" rel="stylesheet">
+		<!-- Bootstrap  -->
+		<link th:href="@{static-resource/css/bootstrap.css}" rel="stylesheet">
+		<!-- Flexslider  -->
+		<link th:href="@{static-resource/css/flexslider.css}" rel="stylesheet">
+		<!-- Theme style  -->
+		<link th:href="@{static-resource/css/style.css}" rel="stylesheet" >
 
 	<!-- Modernizr JS -->
-	<script src="/resources/js/modernizr-2.6.2.min.js"></script>
+		<script th:src="@{static-resource/js/modernizr-2.6.2.min.js}"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+		<script th:src="@{static-resource/js/respond.min.js}"></script>
 	<![endif]-->
 
 	</head>
@@ -188,21 +187,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 
 	<!-- jQuery -->
-	<script src="/resources/js/jquery.min.js"></script>
+	<script th:src="@{static-resource/js/jquery.min.js}"></script>
 	<!-- jQuery Easing -->
-	<script src="/resources/js/jquery.easing.1.3.js"></script>
+	<script th:src="@{static-resource/js/jquery.easing.1.3.js}"></script>
 	<!-- Bootstrap -->
-	<script src="/resources/js/bootstrap.min.js"></script>
+	<script th:src="@{static-resource/js/bootstrap.min.js}"></script>
 	<!-- Waypoints -->
-	<script src="/resources/js/jquery.waypoints.min.js"></script>
+	<script th:src="@{static-resource/js/jquery.waypoints.min.js}"></script>
 	<!-- Flexslider -->
-	<script src="/resources/js/jquery.flexslider-min.js"></script>
+	<script th:src="@{static-resource/js/jquery.flexslider-min.js}"></script>
 	<!-- Sticky Kit -->
-	<script src="/resources/js/sticky-kit.min.js"></script>
-	
-	
+	<script th:src="@{static-resource/js/sticky-kit.min.js}"></script>
 	<!-- MAIN JS -->
-	<script src="/resources/js/main.js"></script>
+	<script th:src="@{static-resource/js/main.js}"></script>
 	
 	<!-- Logout -->
 	<script>

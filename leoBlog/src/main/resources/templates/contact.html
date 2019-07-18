@@ -22,39 +22,38 @@
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="/resources/images/favicon.ico">
+	<link rel="shortcut icon" th:href="favicon.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="/resources/css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="/resources/css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="/resources/css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="/resources/css/flexslider.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="/resources/css/style.css">
+
+		<!-- Animate.css -->
+		<link th:href="@{static-resource/css/animate.css}" rel="stylesheet">
+		<!-- Icomoon Icon Fonts-->
+		<link th:href="@{static-resource/css/icomoon.css}" rel="stylesheet">
+		<!-- Bootstrap  -->
+		<link th:href="@{static-resource/css/bootstrap.css}" rel="stylesheet">
+		<!-- Flexslider  -->
+		<link th:href="@{static-resource/css/flexslider.css}" rel="stylesheet">
+		<!-- Theme style  -->
+		<link th:href="@{static-resource/css/style.css}" rel="stylesheet" >
 
 	<!-- Modernizr JS -->
-	<script src="/resources/js/modernizr-2.6.2.min.js"></script>
-	
-	<!-- jQuery -->
-	<script src="/resources/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="/resources/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="/resources/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="/resources/js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="/resources/js/jquery.flexslider-min.js"></script>
-	<!-- Sticky Kit -->
-	<script src="/resources/js/sticky-kit.min.js"></script>
-	
-	<!-- MAIN JS -->
-	<script src="/resources/js/main.js"></script>
+		<script th:src="@{static-resource/js/modernizr-2.6.2.min.js}"></script>
+
+		<!-- jQuery -->
+		<script th:src="@{static-resource/js/jquery.min.js}"></script>
+		<!-- jQuery Easing -->
+		<script th:src="@{static-resource/js/jquery.easing.1.3.js}"></script>
+		<!-- Bootstrap -->
+		<script th:src="@{static-resource/js/bootstrap.min.js}"></script>
+		<!-- Waypoints -->
+		<script th:src="@{static-resource/js/jquery.waypoints.min.js}"></script>
+		<!-- Flexslider -->
+		<script th:src="@{static-resource/js/jquery.flexslider-min.js}"></script>
+		<!-- Sticky Kit -->
+		<script th:src="@{static-resource/js/sticky-kit.min.js}"></script>
+		<!-- MAIN JS -->
+		<script th:src="@{static-resource/js/main.js}"></script>
 	<script>
 	$(function(){
 		$("#sendmailto").on("click", function(){
@@ -62,7 +61,7 @@
 /* 			var body= $("#name").val()+$("#phone").val()+$("#message").val(); */
 			var subject = "이름 : "+$("#name").val()+" / "+"연락처 : "+$("#phone").val()
 			var body= "내용 : "+$("#message").val();
-			location.href="mailto:kwb103@gmail.com?subject="+subject+"&body="+body;
+			location.href="mailto:andwithyj@gmail.com?subject="+subject+"&body="+body;
 		})
 	})
 	</script>
@@ -102,9 +101,7 @@
 					<small>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-						All rights reserved | This template is made with <i
-						class="icon-heart" aria-hidden="true"></i> by <a
-						href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						</span> <span>Demo Images: <a href="http://nothingtochance.co/"
 							target="_blank">nothingtochance.co</a></span>
 					</small>
@@ -182,7 +179,7 @@
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
 									data-animate-effect="fadeInLeft">
-									<form action="mailto:kwb103@gmail.com" enctype="text/plain"
+									<form action="mailto:andwithyj@gmail.com" enctype="text/plain"
 										name="mailtogo">
 										<div class="form-group">
 											<input type="text" class="form-control" name="name" id="name"
