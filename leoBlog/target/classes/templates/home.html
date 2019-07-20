@@ -26,18 +26,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link th:href="@{static-resource/css/animate.css}" rel="stylesheet">
+	<link th:href="@{/static-resource/css/animate.css}" rel="stylesheet">
 	<!-- Icomoon Icon Fonts-->
-	<link th:href="@{static-resource/css/icomoon.css}" rel="stylesheet">
+	<link th:href="@{/static-resource/css/icomoon.css}" rel="stylesheet">
 	<!-- Bootstrap  -->
-	<link th:href="@{static-resource/css/bootstrap.css}" rel="stylesheet">
+	<link th:href="@{/static-resource/css/bootstrap.css}" rel="stylesheet">
 	<!-- Flexslider  -->
-	<link th:href="@{static-resource/css/flexslider.css}" rel="stylesheet">
+	<link th:href="@{/static-resource/css/flexslider.css}" rel="stylesheet">
 	<!-- Theme style  -->
-	<link th:href="@{static-resource/css/style.css}" rel="stylesheet" >
+	<link th:href="@{/static-resource/css/style.css}" rel="stylesheet" >
 
 	<!-- Modernizr JS -->
-	<script th:src="@{static-resource/js/modernizr-2.6.2.min.js}"></script>
+	<script th:src="@{/static-resource/js/modernizr-2.6.2.min.js}"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script th:src="@{static-resource/js/respond.min.js}"></script>
@@ -62,9 +62,9 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li class="colorlib-active"><a href="/">Home</a></li>
-					<li><a href="/work">Work</a></li>
+					<!--<li><a href="/work">Work</a></li>-->
 					<li><a href="/about">About</a></li>
-					<li><a href="/services">Services</a></li>
+					<!--<li><a href="/services">Services</a></li>-->
 					<li><a href="/blog">Blog</a></li>
 					<li><a href="/contact">Contact</a></li>
 					<li><a href="/board?page=1">Board</a></li>
@@ -81,20 +81,20 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					<li><a href="#"><i class="icon-instagram"></i></a></li>
 					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
 				</ul>
-				<c:choose>
-					<c:when test = "${null ne session}">
-						<p style="margin-bottom:0"><a href="#" id="logout">logout</a></p>
-					</c:when>
-					<c:otherwise>
-						<p style="margin-bottom:0"><a href="/login">login</a></p>
-					</c:otherwise>
-				</c:choose>
+				<!--<c:choose>-->
+					<!--<c:when test = "${null ne session}">-->
+						<!--<p style="margin-bottom:0"><a href="#" id="logout">logout</a></p>-->
+					<!--</c:when>-->
+					<!--<c:otherwise>-->
+						<!--<p style="margin-bottom:0"><a href="/login">login</a></p>-->
+					<!--</c:otherwise>-->
+				<!--</c:choose>-->
 			</div>
 			
 		</aside>
 
 		<div id="colorlib-main">
-			<aside id="colorlib-hero" class="js-fullheight">
+			<!--<aside id="colorlib-hero" class="js-fullheight">
 				<div class="flexslider js-fullheight">
 					<ul class="slides">
 				   	<li th:style="'background: url('+@{static-resource/images/img_bg_1.jpg}+');'">
@@ -428,13 +428,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 					</div>
 				</div>
 			</div>
-
+-->
 			<div class="colorlib-blog">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3">
 							<span class="heading-meta">Read</span>
-							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">Recent Blog</h2>
+							<h2 class="colorlib-heading animate-box" data-animate-effect="fadeInLeft">최신글</h2>
 						</div>
 					</div>
 					<div class="row">
@@ -444,8 +444,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div class="desc">
 									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
 									<h3><a href="blog.html">18 Awesome sites</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
 								</div>
 							</div>
 						</div>
@@ -455,8 +455,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div class="desc">
 									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
 									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
 								</div>
 							</div>
 						</div>
@@ -466,16 +466,85 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 								<div class="desc">
 									<span><small>Feb 07, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
 									<h3><a href="blog.html">Make website from scratch</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
 								</div>
 							</div>
 						</div>
+
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img th:src="@{static-resource/images/img-1.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">18 Awesome sites</a></h3>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img th:src="@{static-resource/images/img-2.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img th:src="@{static-resource/images/img-3.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img th:src="@{static-resource/images/img-1.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">18 Awesome sites</a></h3>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img th:src="@{static-resource/images/img-2.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="blog-entry">
+								<a href="blog.html" class="blog-img"><img th:src="@{static-resource/images/img-3.jpg}" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
+								<div class="desc">
+									<span><small>Feb 07, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
+									<h3><a href="blog.html">Make website from scratch</a></h3>
+									<!--<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>-->
+									<!--<a href="blog.html" class="lead">Read More <i class="icon-arrow-right3"></i></a>-->
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 
-			<div id="get-in-touch" class="colorlib-bg-color">
+<!--			<div id="get-in-touch" class="colorlib-bg-color">
 				<div class="colorlib-narrow-content">
 					<div class="row">
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
@@ -490,7 +559,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 						
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 

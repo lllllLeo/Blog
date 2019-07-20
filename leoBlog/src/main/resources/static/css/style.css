@@ -495,7 +495,8 @@ body.offcanvas {
   margin-bottom: 3em; }
   @media screen and (max-width: 768px) {
     .blog-entry {
-      margin-bottom: 3em; } }
+      margin-bottom: 3em; }
+  }
   .blog-entry .blog-img {
     width: 100%;
     float: left;
